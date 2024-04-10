@@ -7,8 +7,8 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Shubham",
+    "full name": "Shubham Khanra",
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",
@@ -33,6 +33,6 @@ JsUser.greeting = function(){
 JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
-
+console.log(JsUser.greeting); //OUTPUT : [Function (anonymous)]
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
